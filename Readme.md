@@ -39,26 +39,6 @@ Multi-View Images → SIFT Detection → Lowe's Ratio Filtering → RANSAC (Fund
 
 ![Inlier Matches](inlier_matches.png)
 
-**Results across 13 consecutive pairs:**
-
-| Pair | Raw Matches | Inliers | Inlier Ratio | Status |
-|------|------------|---------|--------------|--------|
-| 00 ↔ 01 | 2926 | 2382 | 81.4% | ✓ PASS |
-| 01 ↔ 02 | 1538 | 1243 | 80.8% | ✓ PASS |
-| 02 ↔ 03 | 387 | 235 | 60.7% | ✗ FAIL |
-| 03 ↔ 04 | 1736 | 1377 | 79.3% | ✓ PASS |
-| 04 ↔ 05 | 1258 | 905 | 71.9% | ✓ PASS |
-| 05 ↔ 06 | 305 | 196 | 64.3% | ✗ FAIL |
-| 06 ↔ 07 | 578 | 378 | 65.4% | ✗ FAIL |
-| 07 ↔ 08 | 285 | 79 | 27.7% | ✗ FAIL |
-| 08 ↔ 09 | 107 | 37 | 34.6% | ✗ FAIL |
-| 09 ↔ 10 | 1238 | 898 | 72.5% | ✓ PASS |
-| 10 ↔ 11 | 268 | 135 | 50.4% | ✗ FAIL |
-| 11 ↔ 12 | 142 | 10 | 7.0% | ✗ FAIL |
-| 12 ↔ 13 | 662 | 406 | 61.3% | ✗ FAIL |
-
-**8 of 13 pairs passed** the ≥70% inlier threshold.
-
 ---
 
 ### 4. Epipolar Geometry Validation
@@ -71,7 +51,7 @@ Multi-View Images → SIFT Detection → Lowe's Ratio Filtering → RANSAC (Fund
 
 ## Dataset
 - **Subject**: Bronze Husky statue, Northeastern University
-- **Images**: 14 multi-view photographs captured by handheld smartphone
+- **Images**: 60 multi-view photographs captured by handheld smartphone
 - **Capture pattern**: Consecutive views with ~30° rotation increments around the subject
 - **Failing pairs** (07↔08, 08↔09, 11↔12) attributed to large viewpoint jumps between captures
 
